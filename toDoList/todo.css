@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+}
+body{
+    width: 100%;
+    background:  url(img/praia_bonita-unsplash.jpg) no-repeat;
+    background-size: cover;
+}
+h1{
+    color: rgb(246, 246, 247);
+    font-size: 45px;
+    filter: blur(0.5px);
+    -webkit-text-stroke: 1px #000000;
+	text-shadow: 0 0 5px #CCFFF7, 0 0 200px #000000;
+}
+.container{
+    text-align: center;
+    padding-top: 10%;
+}
+.border{
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    display: flex;
+    width: 800px;
+    max-width: 1000px;
+    height: 40vh;
+    transform: translate(30vw, 10vh);
+    justify-content: center;
+}
+.item{
+    display: inline-flex;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 700px;
+    height: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+input{
+    border-radius: 10px;
+    border: 2px solid #dfdfdf;
+    font-size: 15px;
+    height: 25px;
+    width: 80%;
+}
+
+i{
+    color: #1418e2;
+    scale: 1.5;
+}
+
+i:hover{
+    color: whitesmoke;
+    scale: 1;
+    animation: buttons 1s ease-out infinite;
+}
+
+@keyframes buttons {
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 2;
+    }
+    100%{
+        scale: 1;
+    }
+}
