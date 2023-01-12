@@ -7,7 +7,7 @@
 }
 body{
     width: 100%;
-    background:  url(img/praia_bonita-unsplash.jpg) no-repeat;
+    background:  url(img/wallpaper_site.jpg) no-repeat;
     background-size: cover;
 }
 h1{
@@ -75,5 +75,13 @@ i:hover{
     }
     100%{
         scale: 1;
+    }
+}
+
+@media (max-width: 700px) and (orientation: portrait){ 
+    body{
+        width: 100%;
+        background: url(img/wallpaper_celular.jpg) no-repeat;
+        background-size: cover;
     }
 }
