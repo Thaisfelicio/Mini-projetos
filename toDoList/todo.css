@@ -35,6 +35,7 @@ h1{
     height: 40vh;
     transform: translate(30vw, 10vh);
     justify-content: center;
+    flex-wrap: wrap;
 }
 .item{
     display: inline-flex;
