@@ -9,6 +9,7 @@ body{
     width: 100%;
     background:  url(img/wallpaper_site.jpg) no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 h1{
     color: rgb(246, 246, 247);
@@ -33,8 +34,9 @@ h1{
     width: 800px;
     max-width: 1000px;
     height: 40vh;
-    transform: translate(30vw, 10vh);
     justify-content: center;
+    transform: translate(30vw, 10vh);
+   
     flex-wrap: wrap;
 }
 .item{
@@ -44,7 +46,7 @@ h1{
     width: 700px;
     height: 30px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 5%;
 }
 
@@ -78,11 +80,81 @@ i:hover{
         scale: 1;
     }
 }
+@media (width <=1280px){/* cabem 4 items nesta configuração*/
+    .border{
+        transform: translate(19vw, 10vh);
+    }
+}
 
-@media (max-width: 700px) and (orientation: portrait){ 
+@media (width <=700px){/*cabem 7 a 10 itens*/
+    body{
+        width: 100vw;
+        height: 100vh;
+        
+    }
+    h1{
+        padding: 2%;
+        font-size: 35px;
+    }
+    .border{
+        display: flex;
+        width: 300px;
+        max-width: 500px;
+        transform: translate(12vw, 10vh);
+        height: 50%;
+    }
+    input{
+        width: 60%;
+    }
+
+    i{
+        scale: 1.3;
+    }
+}
+
+@media (width:820px){/*cabem 10 itens*/
+    .border{
+        transform: translate(8vw, 10vh);
+        width: 700px;
+        height: 60%;
+
+    }
+    h1{
+        padding: 3%;
+    }
+}
+
+@media (width: 540px){/*cabem 7 itens*/
+    .border{
+        transform: translate(13vw, 10vh);
+        width:400px;
+    }
+    input{
+        width: 65%;
+    }
+}
+
+@media (width <400px) and (orientation: portrait){ /*cabem 7 itens*/
     body{
         width: 100%;
         background: url(img/wallpaper_celular.jpg) no-repeat;
         background-size: cover;
+        height: 100vh;
+    }
+
+    h1{
+        font-size: 30px;
+        padding: 2%;
+    }
+    .border{
+        height: 50vh;
+        transform: translate(10vw, 10vh);
+        width: 300px;
+        max-width: 500px;
+    }
+
+
+    i{
+        scale: 1.2;
     }
 }

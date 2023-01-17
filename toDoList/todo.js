@@ -27,10 +27,4 @@ adicionarTarefa.addEventListener("click", ()=>{
     bordaVidro.appendChild(proximoItem);
 })
 
-// <div class="item">
-    //         <span><i class="fa-solid fa-hands-clapping"></i></span>
-    //         <input type="text">
-    //         <a href="#" id="salvarTarefa"><i class="fa-solid fa-floppy-disk"></i></a>
-    //         <a href="#" id="deletar"><i class="fa-solid fa-trash"></i></a>
-    //         <a href="#" id="adicionarTarefa"><i class="fa-solid fa-plus"></i></a>
-    //     </div>
+//cabem 7 itens na borda de vidro na versão de celular <700px
