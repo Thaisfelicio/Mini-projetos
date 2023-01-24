@@ -3,11 +3,11 @@ let item = document.getElementsByClassName("item");
 let bordaVidro = document.querySelector(".border");
 
 //botoes da lista
-let salvarTarefa = document.getElementById("salvarTarefa");
+let salvarTarefa = document.getElementsByClassName("salvarTarefa");
 let deletar = document.getElementById("deletar");
-let adicionarTarefa = document.getElementById("adicionarTarefa");
+let adicionarTarefa = document.querySelectorAll(".adicionarTarefa");
 
-adicionarTarefa.addEventListener("click", ()=>{
+function addTask(){
     //crio uma div nova para armazenar o conteudo
     let proximoItem = document.createElement("div");
     //adiciono a classe item nela
@@ -17,14 +17,22 @@ adicionarTarefa.addEventListener("click", ()=>{
     let itemNovo = 
         "<span>" + "<i class='fa-solid fa-hands-clapping'>" + "</i>" +"</span>" +
         "<input type='text'>" +
-        "<a id='salvarTarefa'>" + "<i class='fa-solid fa-floppy-disk'>" + "</i>" + "</a>" +
-        "<a id='deletar'>" + "<i class='fa-solid fa-trash'>" + "</i>" + "</a>" +
-        "<a id='adicionarTarefa'>" + "<i class='fa-solid fa-plus'>" + "</i>" + "</a>";
+        "<a class='salvarTarefa'>" + "<i class='fa-solid fa-floppy-disk'>" + "</i>" + "</a>" +
+        "<a id='deletar'>" + "<i class='fa-solid fa-trash'>" + "</i>" + "</a>" /*+
+        "<a class='adicionarTarefa'>" + "<i class='fa-solid fa-plus'>" + "</i>" + "</a>"*/;
     
     //adiciono o conteudo criado dentro da div
     proximoItem.innerHTML = itemNovo;   
     //adiciono a div completa dentro da div com borda de vidro através do appendChild
     bordaVidro.appendChild(proximoItem);
+}
+
+    adicionarTarefa[0].addEventListener("click", ()=>{
+        addTask();
 })
 
-//cabem 7 itens na borda de vidro na versão de celular <700px
+ 
+
+
+
+

@@ -42,9 +42,8 @@ h1{
 }
 .item{
     display: inline-flex;
-    border-radius: 10px;
     background-color: transparent;
-    width: 700px;
+    width: 90%;
     height: 30px;
     flex-direction: row;
     justify-content: space-around;
@@ -70,6 +69,15 @@ i:hover{
     animation: buttons 1s ease-out infinite;
 }
 
+.fa-solid.fa-star{
+    color: yellow;
+}
+
+input::placeholder{
+    color: lightslategray;
+    transform: translateX(5%);
+}
+
 @keyframes buttons {
     0%{
         scale: 1;
@@ -82,8 +90,13 @@ i:hover{
     }
 }
 
+@media (width <=1024px){
+    h1{
+        padding: 4%;
+    }
+}
 
-@media (width <=700px){/*cabem 7 a 10 itens*/
+@media (width <=700px){
     body{
         width: 100vw;        
     }
@@ -100,19 +113,19 @@ i:hover{
     }
 }
 
-@media (width:820px){/*cabem 10 itens*/
+@media (width:820px){
     h1{
         padding: 3%;
     }
 }
 
-@media (width: 540px){/*cabem 7 itens*/
+@media (width: 540px){
     input{
-        width: 65%;
+        width: 70%;
     }
 }
 
-@media (width <400px) and (orientation: portrait){ /*cabem 7 itens*/
+@media (width <400px) and (orientation: portrait){ 
     body{
         width: 100%;
         background: url(img/wallpaper_celular.jpg) no-repeat;
@@ -127,5 +140,8 @@ i:hover{
     
     i{
         scale: 1.2;
+    }
+    .border{
+        width: 80%;
     }
 }
