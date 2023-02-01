@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
+    
+}
+ul{
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    list-style: none; 
+    transform: translateX(-30%);
+    margin-right: 10%;
+}
+
+.logo{
+    position: relative;
+    max-width: 5%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.column{
+    margin-top: 10%;
+    padding: 4%;
+}
