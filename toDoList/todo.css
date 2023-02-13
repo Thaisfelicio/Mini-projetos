@@ -77,6 +77,10 @@ input::placeholder{
     color: lightslategray;
     transform: translateX(5%);
 }
+.selecionar{
+    width: 3%;
+    height: 80%;
+}
 
 @keyframes buttons {
     0%{
@@ -108,6 +112,10 @@ input::placeholder{
         width: 60%;
     }
 
+    .selecionar{
+        width: 5%;
+        height: 80%;
+    }
     i{
         scale: 1.3;
     }
@@ -137,7 +145,10 @@ input::placeholder{
         font-size: 30px;
         padding: 2%;
     }
-    
+    .selecionar{
+        width: 5%;
+        height: 80%;
+    }
     i{
         scale: 1.2;
     }
