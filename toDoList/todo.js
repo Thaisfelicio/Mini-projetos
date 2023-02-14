@@ -1,11 +1,12 @@
 //a tarefa completa
-let item = document.getElementsByClassName("item");
+let itens = document.querySelectorAll('.item');
 let bordaVidro = document.querySelector(".border");
 
 //botoes da lista
 let salvarTarefa = document.getElementsByClassName("salvarTarefa");
 let deletar = document.querySelectorAll(".deletar");
 let adicionarTarefa = document.querySelectorAll(".adicionarTarefa");
+const selecionar = document.querySelectorAll(".selecionar");
 
 function addTask(){
     //crio uma div nova para armazenar o conteudo
@@ -40,12 +41,16 @@ salvarTarefa[0].addEventListener("click", function(tarefa){
 })
 
 
-// item.forEach(item => {
-//     item.addEventListener('click', function(e){
-//         const itemFeito = e.target.parentElement;
-//         itemFeito.remove();
-//     })
-// });
+itens.forEach(function(item) {
+    selecionar[0].addEventListener('change', function(){
+        if(selecionar.checked){
+            deletar[0].addEventListener('click', function(){
+            item.remove();
+            })
+        }
+    })
+    
+});
 
 
   
